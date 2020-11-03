@@ -38,7 +38,7 @@ document.querySelector(".btn-hold").addEventListener("click", function(){
                                                                             document.querySelector("#player-"+(activePlayer+1)+"-current").textContent=0;
                                                                             }
 
-                                                                            if(scores[activePlayer]>=20){
+                                                                            if(scores[activePlayer]>=100){
                                                                                 alert("Pobedio je player "+(activePlayer+1));
                                                                                 document.querySelector(".player-"+(activePlayer+1)).textContent = "WINNER!";
                                                                             gameState = false;
