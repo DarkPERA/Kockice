@@ -1,0 +1,161 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(241, 101, 77);
+    height:100vh;
+    width:100%;
+   
+}
+.main_div{
+    position:relative;
+    height:80%;
+    width:60%;
+    
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 248, 220, 0.452);
+}
+/*
+---------PLAYER 1-------------
+*/
+.main-1{
+    float:left;
+    width:50%;
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: darkgray;
+    text-align: center;
+}
+.player-1{
+    display:inline-block;
+    margin-top: 10%;
+    font-size: 50px;
+    color:rgb(241, 122, 122);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overall-score-1{
+    color:rgb(59, 59, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:15%;
+    font-size: 60px;
+}
+/*
+---------PLAYER 2-------------
+*/
+.main-2{
+    float:left;
+    width:50%;
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: rgb(205, 233, 233);
+    text-align: center;
+}
+
+.right_main::after{
+    clear:both;
+    content:"";
+    display:block;
+}
+
+.player-2{
+    display:inline-block;
+    margin-top: 10%;
+    font-size: 50px;
+    color:rgb(241, 122, 122);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.overall-score-2{
+    color:rgb(59, 59, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:15%;
+    font-size: 60px;
+}
+
+/*
+------------BOX CURRENT-------------
+*/
+.box{
+    display: inline-block;
+    background-color: rgb(179, 34, 9);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 55%;
+    padding-top:5px;
+   padding-bottom: 25px;
+   padding-left: 25px;
+   padding-right:25px;
+}
+.current{
+   color:rgb(187, 178, 178);
+   font-size: 25px;
+   padding-bottom:8px;
+   text-transform: uppercase;
+}
+.score{
+    font-size:45px;
+}
+.dot{
+    display:inline-block;
+    background-color:red;
+    border-radius: 50%;
+    vertical-align: middle;
+    height:15px;
+    width:15px;
+}
+#dot-player-2{
+    display:none ;
+}
+/*
+--------------Buttons------------------
+*/
+button, button:active, button:hover, button:link, button:visited{
+    position:absolute;
+    background-color: rgba(136, 127, 127, 0.404);
+    display: block;
+    padding:5px 25px;
+    font-size: 25px;
+    font-style:Arial, Helvetica, sans-serif;
+    border:none;
+    cursor:pointer;
+    color: rgb(58, 9, 9);
+    border-radius: 200px;
+    
+}
+.btn-new, .btn-new:active, .btn-new:hover, .btn-new:link, .btn-new:visited{
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    border:none;
+}
+.btn-roll, .btn-roll:active, .btn-roll:hover, .btn-roll:link, .btn-roll:visited{
+    top:70%;
+    left:50%;
+    border:none;
+   transform:translateX(-50%);
+}
+.btn-hold, .btn-hold:active, .btn-hold:hover, .btn-hold:link, .btn-hold:visited{
+    left: 50%;
+    top:80%;
+    border:none;
+    transform: translateX(-50%);
+}
+
+/*
+-------------Images----------
+*/
+img{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height: 20%;
+    opacity: 0.9;
+    filter:drop-shadow(2px 4px 18px rgb(59, 59, 59));
+    
+}
