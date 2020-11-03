@@ -1,0 +1,4 @@
+Prvi igrac koji sakupi 100 bodova pobedjuje. 
+Hold dodaje current rezultat na celokupni rezultat i potez se prepusta sledecem igracu.
+Roll baca kockicu i ucitava rezultat kockice u current rezultat. 
+Ukoliko se baci 1, onda se current rezultat brise i potez se prepusta sledecem igracu.
